@@ -1,0 +1,1054 @@
+/*
+ * MWS Admin v1.5 - Form Stylesheet
+ * This file is part of MWS Admin, an Admin template build for sale at ThemeForest.
+ * All copyright to this file is hold by Mairel Theafila <maimairel@yahoo.com> a.k.a nagaemas on ThemeForest.
+ * Last Updated:
+ * April 29, 2012
+ *
+ * Table of Contents
+ * ==================================================
+ *
+ *  1. Form Style
+ *  2. Button Row
+ *  3. Form Item
+ *  4. Fieldset
+ *  5. Form Labels
+ *  6. Form Inputs
+ *  7. Column Form Layout
+ *  8. Inline Form Layout
+ *  9. Block Form Layout
+ * 10. Form List
+ * 11. Placeholder Text
+ * 12. Form Clearfix
+ * 13. Form Messages
+ * 14. Colorpicker Input
+ * 15. Dual List Box
+ * 16. Customfile Input
+ *
+ */
+
+/* (1) Form Style
+================================================== */
+
+.yo-form .yo-form-row
+{
+    padding: 6px 12px;
+}
+
+/* (2) Button Row
+================================================== */
+
+.yo-form .yo-button-row
+{
+    padding: 3px 24px;
+    border-top: 1px solid #bcbcbc;
+    text-align: right; /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMmkutdmwAAAApJREFUeNpjYAAAAAIAAeUn3vwAAAAASUVORK5CYII=);*/
+}
+
+.yo-form .yo-button-row.left
+{
+    text-align: left;
+}
+
+/* (3) Form Item
+================================================== */
+
+.yo-form .yo-form-item
+{
+    min-height: 34px;
+    height: 34px;
+    height: auto !important;
+    vertical-align: middle;
+    padding: 0px,5px,5px,0px;
+}
+
+/* (4) Fieldset
+================================================== */
+
+.yo-form.yo-wizard-form fieldset
+{
+    border-top: none;
+}
+
+.yo-form fieldset
+{
+    margin: 0;
+    border-top: 1px dotted #bcbcbc;
+}
+
+.yo-form fieldset legend
+{
+    margin-left: 24px;
+    padding: 0 4px;
+    border: 1px dotted #bcbcbc;
+}
+
+/* (5) Form Labels
+================================================== */
+
+
+
+.yo-form label
+{
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+.yo-form label span.required
+{
+    color: #FF0000;
+}
+
+/* (6) Form Inputs
+================================================== */
+
+.yo-form .yo-form-item select, .yo-form .yo-form-item textarea, .yo-form .yo-form-item .yo-textinput, .yo-form .yo-form-item .customfile, .yo-form .yo-form-item .ui-spinner, .yo-form .yo-form-item.large select, .yo-form .yo-form-item.large textarea, .yo-form .yo-form-item.large .yo-textinput, .yo-form .yo-form-item.large .customfile, .yo-form .yo-form-item.large .ui-spinner
+{
+    width: 100%;
+}
+
+.yo-form .yo-form-item.medium select, .yo-form .yo-form-item.medium textarea, .yo-form .yo-form-item.medium .yo-textinput, .yo-form .yo-form-item.medium .customfile, .yo-form .yo-form-item.medium .ui-spinner
+{
+    width: 75%;
+}
+
+.yo-form .yo-form-item.small select, .yo-form .yo-form-item.small textarea, .yo-form .yo-form-item.small .yo-textinput, .yo-form .yo-form-item.small .customfile, .yo-form .yo-form-item.small .ui-spinner
+{
+    width: 55%;
+}
+
+.yo-form select, .yo-form textarea, .yo-form .yo-textinput , .yo-textinput
+{
+    border: 1px solid #c5c5c5;
+    padding: 2px 3px;
+    color: #323232;
+    margin: 2px;
+    background-color: #ffffff;
+    outline: none; /* CSS 3 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -o-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -khtml-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+}
+
+.yo-form .yo-autotextinput
+{
+    border: 1px solid #c5c5c5;
+    padding: 1px 2px;
+    color: #323232;
+    margin: 2px;
+    background-color: #FFFFD9;
+    outline: none; /* CSS 3 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -o-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -khtml-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+}
+
+.yo-form textarea
+{
+    height: 4em;
+    resize: none;
+}
+
+.yo-form select:disabled, .yo-form textarea:disabled, .yo-form .yo-textinput:disabled
+{
+    background: #f0f0f0;
+}
+
+.yo-form select.error, .yo-form textarea.error, .yo-form .yo-textinput.error
+{
+    border-color: #eb979b;
+}
+
+/* (7) Column Form Layout
+================================================== */
+
+.yo-form-cols
+{
+    padding: 0 24px;
+}
+
+.yo-form-item .yo-form-cols
+{
+    padding: 0;
+}
+
+.yo-form-item .yo-form-cols .yo-form-col-1-8, .yo-form-item .yo-form-cols .yo-form-col-2-8, .yo-form-item .yo-form-cols .yo-form-col-3-8, .yo-form-item .yo-form-cols .yo-form-col-4-8, .yo-form-item .yo-form-cols .yo-form-col-5-8, .yo-form-item .yo-form-cols .yo-form-col-6-8, .yo-form-item .yo-form-cols .yo-form-col-7-8, .yo-form-item .yo-form-cols .yo-form-col-8-8
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.yo-form-col-1-8, .yo-form-col-2-8, .yo-form-col-3-8, .yo-form-col-4-8, .yo-form-col-5-8, .yo-form-col-6-8, .yo-form-col-7-8, .yo-form-col-8-8
+{
+    float: left;
+    padding: 12px 6px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+}
+
+.yo-form-col-1-8 label, .yo-form-col-2-8 label, .yo-form-col-3-8 label, .yo-form-col-4-8 label, .yo-form-col-5-8 label, .yo-form-col-6-8 label, .yo-form-col-7-8 label, .yo-form-col-8-8 label
+{
+    float: none;
+    width: auto;
+    display: block;
+}
+
+.yo-form-col-1-8 .yo-form-item, .yo-form-col-2-8 .yo-form-item, .yo-form-col-3-8 .yo-form-item, .yo-form-col-4-8 .yo-form-item, .yo-form-col-5-8 .yo-form-item, .yo-form-col-6-8 .yo-form-item, .yo-form-col-7-8 .yo-form-item, .yo-form-col-8-8 .yo-form-item
+{
+    margin-left: 0 !important;
+}
+
+.yo-form-col-1-8 label, .yo-form-col-2-8 label, .yo-form-col-3-8 label, .yo-form-col-4-8 label, .yo-form-col-5-8 label, .yo-form-col-6-8 label, .yo-form-col-7-8 label, .yo-form-col-8-8 label
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.yo-form-cols .alpha
+{
+    padding-left: 0;
+}
+
+.yo-form-cols .omega
+{
+    padding-right: 0;
+}
+
+.yo-form-col-1-8
+{
+    width: 12.5%;
+}
+
+.yo-form-col-2-8
+{
+    width: 25%;
+}
+
+.yo-form-col-3-8
+{
+    width: 37.5%;
+}
+
+.yo-form-col-4-8
+{
+    width: 50%;
+}
+
+.yo-form-col-5-8
+{
+    width: 62.5%;
+}
+
+.yo-form-col-6-8
+{
+    width: 75%;
+}
+
+.yo-form-col-7-8
+{
+    width: 87.5%;
+}
+
+.yo-form-col-8-8
+{
+    width: 100%;
+}
+
+/* (8) Inline Form Layout
+================================================== */
+
+
+
+
+
+/* (9) Block Form Layout
+================================================== */
+
+.yo-form .yo-form-block label, .yo-form .yo-form-block .yo-form-item
+{
+    display: block;
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+
+/* (10) Form List
+================================================== */
+
+.yo-form ul.yo-form-list, .yo-form ul.yo-form-list li
+{
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.yo-form ul.yo-form-list, .yo-form .yo-form-block ul.yo-form-list
+{
+    display: block;
+    width: 100%;
+}
+
+.yo-form ul.yo-form-list.inline li
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.yo-form ul.yo-form-list li label
+{
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: inline !important;
+    vertical-align: middle;
+}
+
+.yo-form ul.yo-form-list li input
+{
+    vertical-align: middle;
+}
+
+/* (11) Placeholder Text
+================================================== */
+
+.yo-form .placeholder
+{
+    color: #aaa;
+}
+
+
+
+/* (12) Form Clearfix
+================================================== */
+
+.yo-form .yo-form-row:before, .yo-form .yo-form-row:after
+{
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.yo-form .yo-form-row:after
+{
+    clear: both;
+}
+
+.yo-form .yo-form-row
+{
+    zoom: 1;
+}
+
+/* (13) Form Messages
+================================================== */
+
+.yo-form-message
+{
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 15px 8px 15px 45px;
+    position: relative;
+    vertical-align: middle;
+    background-color: #f8f8f8;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.yo-form-savemessage
+{
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 15px 8px 15px 45px;
+    position: relative;
+    vertical-align: middle;
+    background-color: #f8f8f8;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.yo-form-savemessage.success
+{
+    background-color: #e1f1c0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEzklEQVR42p2UfUzUdRzHP5AGOmKdrAgfpyUWmSXc2EEqJoTzAUnUhlj6R8bD1tQVDtE5yWX4gID3DJZwggYs4TDMsMIwQCQeDu7oAMGTiTOzxvKhhUvffT7jAq8Ro97be/e97/fzfn0+39890KhS0qyQXbQlJtO7d51agZhsL7yR5YHoLHcsP0i9i9Noy5xtNIv+q8atJd/AVNqbUqIaKGzYgIvXU9Hx2z60/JyCmmuJONcdh9xaFbZ95o3VR2ggfB/tDU0l3zHBpyZSaKzW1/5l+w7cQxH6HnyI831LUGYPQGl7AE61z4XZ/hLOdoXg654VMF0Kwrt57lhxiOyL9lDoqHDFBgpOyn/+ble/Ebehx5nL86G78Bi01QT1+WFrviMYagjH6r1wqm0uymzh2FnqzY+P7qpSKXhE+LytNHO91qe//dcMXB1IQX6TAtkCqiXk1LEvulr2jGw9Nypo8kWFfSl2lysQdZj6F++mmfRP8fVKiprewtX7O5HX9ASOVAtodBvZutpBH29+CuW2CLxX6ImIj6jEBT4jniI/KPJH553dMHcGIEvg9aNbz3ANg/MaJ0PHN9Hyutjqj/yGIMTpCSHbKXKowcJd7ulHa8Nh6d8ItTySS+yGf7eRfegCodqxFffu98HUPB0abmLg/dP2MLxfPAFL9lA6icYvpCmxas+eio41+OLyPGjrR4cbLjH8e0JVTzwe4k+Ibtyuhubi4FmRdTayq+YgOoN6pq6iKeS1lJRv53ig9vpGFFp9oJfpf+Ap2Zkc0jM0l9eyJxMeYPi3VxLxqOy38qCpH8wUtPrgZPMCrFETZqwlJT35Oqni9G443/smTG2TYGgkp8fjbPca5PAHrpXpm3jyOoY7NgN4MAS33tTisAzCcKkxWSehxLIYa7nB1ChS0dPLSbVOQzjTsQzH+QYGLlLzLU53RUDU8UshMnm69BpClSMewMMheNtNHTIYrmV4LueMzgbFlrDhBtOiKSSG35RZI1Bg4xs0EzQcuDPQOwRq+UmNyp4EiIbhRyCNdY0M50wO28g22RQoaeUb8NDCpinLSMm/wD/y6pU4+eNkGC0ENU9yzrEJDzCAkWS9xY+lgeECtgxbsieYcYxZq5kpbPJQkF9kGlXtrfBFWYcSemfhAZ7uqytx8rxdJ2d4BsO1DM9tdW1gYJcyQ1jCfJzZJApKop0Jx91gbl+CT20TYOCgkX2ogZs4NgzBLbc0yGzkyVuc8EcsGcmWMSPB5AZh0t/yX0GBKw/Qjf2V0/nDXQRDGzewcpCdyZNWXFmFqmtJ0FgYLkCrq6VWMmbOCkNYs5dTED2qV96htFgd4VjdfJi7g2G0cYiDuewsnjijyfne5go3yCvvSUaywhAWjSCfBclUuTmPIP/x5T2h+MQ+ETobcTOBOOFOG9hyJjVSKxnJCkNYNILc2M+E7aBvNh4l/rk/B7P9NXze/TLyO7xhtDPUaVnLnpyVco3USkaywiBhjaJpQfFkiDpIvyeXeHH4WZxoVuF0ZwTKOyNhZpfzWvbkTGqkVjKSpTFIuk/yC6SYV5Pp3MqPybGJp+NvmYtlT86kRmol48yOWR5s74l+tOCFdbT9xThKD1hP+8Wylj05kxpn7f+WTDXOCfEUy1r2xjLxX8E9EvOgJkPrAAAAAElFTkSuQmCC);
+    border-color: #b5d56d;
+    color: #62a426;
+}
+
+.yo-form-savemessage.error
+{
+    background-color: #ffcbca;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFUElEQVR4Xp1VbWxT1R9+zj33re3ara5b143h1rGuG8KGTDC8OsSJiSaiCRIg8IEvRoz4DxojfACMvCxRCRESIkokAQnho0TBBNQQBy5sYwtMNmDrf7Lutd3WbX29vcec2xXrEDE+yS95zu885z73d14J/gGHAbenuuTlrFz7DkkUZ4MxMKYDDIhrWu9UKPxpf8fd81tj6MYj8LcGX5jgnOWeta2oZt4HDq9HfqLcDdWRB2hJIJEAS8Qxed+PQGcXAj2++MjQSEMgNHV0Y1f/4GMNzrpsS2Y9VfHVnNUrvPlLlwKjQYTbWhHp84NpCWMAESWY8p0wlbqh6Tr+f6UR/nu+24GJ8Na1rXcbH2lwwiovWrBm+WXv+tctaq4Doe/OY6K5yfgwSyYBxqZHEMNEUBTY5lYja141Btra4btxc6o3OL7qjfaeJkxDSJMzc5ylVcsXXqzavN4iiwqGjx1F6OoVCJIMmmUDVU0g4QmQqQmDU0sWCCEYa/kVgUsXkF9ZiZJKj6XQZr547hlP6UMG2VZLQ8Ura3JkKiNw+iQSg/2Q7LkQZBmIRiEXl8Lx2SkenBs5QVYg2XIQ6+/H2JXLcHq9cOY5cqwCaUAmjltp/e1t6xn7+RwL/W8D61vlYYNrF6fitWeZf3EhCx3/hKXBOc/xvrSu74UqNvXuBhbevY01rZzPzi6qqn9QQX55SZ2zqgLM70f4t5tQ7LmglD4IQRCMSCPdztTIthxMdXdBNqnIsZihsmQdAIhbgKIC9+x1VlcBYs0tEBUFRJIAhhQIgcDbuo40OOc5QkWApYQEnDJow0Owu1ywDo2se6/Ge0Q0Ay6L2eSmdjsmB/wQFBUgFCAZBooJbHICaXDOc0SghkEaRASSkSmY7HbIWsKdJasuMQaIhGt0BqYlQagEUAF/QjBMyVgwXQXnqZwgAsiojAhGFYzrNA0RBSJX8D1uJChvck4pMsEUFSwSTvUBBqfcwPgRIcNAN74R15KGiUBFw4GAMT7YSDA604CBqGaQ0WEwrgYMLqhmrptxVnVjBojOQBhABYHwKUpEI9GYPjam8H2vDQ8+VAFUAjCCxNefpwwYAVFVQJhRqUAgKirCw0FoAo2F44kEcQKuL1dUn17x0uo6m9mMSGsLwAeD/fVGiUagh0bBIdjsgGp6WJPUoBbNhu+XRtwYCv74zmB0o1HfodL8na/WL99XsnQZEtebkIzxpRdTHlwxPgq6cAmkt3eBI3FkH5LNjUC2Pa0xppiazYDZipvfnsc1k3XXW9du7RcAoDMav9DT1T0w0euDVOEFFSgoyPQhEkHicQhllYAo8eCc53hfSkMEY3GlgkL0NzVhWJQHbo1NXkTmCjWUufasqSrd7a1bCZmI0HrupSqgIjA5DlJZA7p1OziSJw6DdbQCWdnG1iXcpLgYgZZWdLa24Zps2bujtWvPzOs692RN2TeLy4rrS2proVgsYPfvQ49GU4uuJYzHhsOoRJZTO89sBsnLR7CtHT3NLehQLT9svt65AUBgpgHnzlO1nlPVjuznizzlyCkpBUnqwEQI4OtCMoYoCpBlhR6NYODqVfT19uGO2XppY9OdTYA2CIA96sksPjT3yZ01NtOW4rxcU7bDAauzAJLVmjqhjAcQCwQx7uvGmH8AffF4pIOqJ7e3+/ZDi//+uDeZ5+wv5tuf21SY+6ZDIuUOkZYoGn+LNej8OiEMUUHECIgvKCl3zvSPHvu+b+gnAKPg9v8SCgDbnGzLsg/nut//qKb8wN4FnoN7n/Ye/LjWe2DnfM/7Hnv2Mq5Jaf87CABx2lCdDmU6R/AY/AH1Fih4d6s3jwAAAABJRU5ErkJggg==);
+    border-color: #eb979b;
+    color: #9b4449;
+}
+
+.yo-form-savemessage.info
+{
+    background-color: #bce5f7;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFhklEQVR4Xp1Va2wUVRT+7szsTHd2u6/Sd9m22wKttBTC0xYfVFrRgJpgGlETY1BjJKA8GgwJUYwWSDQhgEaN/iAS/mgUIiQ8ClrEakGhtUDtY9c+WHbb7nZpabudfcx19rrtWiJiPMnJnJz5zv3ufOeeOwT/am84hNULVqenWrcKgs5OKQVAQQlBJBzqHfKPfKA0dR3HwDsu3MX+mWDuu+lCXs6GhaWO7YtKs8QlJVmwZ+oBCkSjQCgCOPtGcPGqG83t3pDT6d477u3/EE3b+u9NUH6g3F6U//lTVSVFzzyWi9EJoLHVgz/cAYQjKoMIAg97ugVlhWmglOCr09dx4RfX7x73wHp65uXGuxPM3b2k7NFl5zY+t9gwb7YBR+pdOH3xBpQQhRKJgtBElajjoJd4PFiWjZWL8vBzswdfn2kdc7Z2VtILmy4ibtwUU+X+/ILlZae2vLjUkJejw87PLuNoQw8EjofZIGouIaiCuUmLzbIEnnA42dSLT461YN6cGXiyqsSQPTvvlLz603zETZgM9MmWvevWzLfYMyXs+aIFrpujSLfJoADGlCgcaTLeXzeHYT862wfXYBAGSYCkebf3Ng6faUPNijlYPD/PUt8wshdADaZsXl31qrpL9LyP0g1fuuis2gZa/l4TrajTXHvmbGmgB+t7aNxiMctVxDExbPGbDfSVI11030/DtHTzWYrKA9VTEllzM1YsKs2BfySEH3/zIDNFhijwEHgOOoGDIUmAfzyCSfOPRdjutXcxDMOmWWRc6RqExo98ewrMZuMKJhH4J7JzCrJqigtsaGobhF7ktQIONN5NAiDNJOF4iw8d/UGW7fEFkWWTwBECZnFkEuXgdAdQYLfhssVSM1y4/qAAQZ8pywaHPUPEicZhyEk68DyHSYuqFDOSdcg0i7gRUFjOZhRZX3Q8AUXCJAiaChNYMCsDRJAcEA2ZAqgixJWCEtWKdAQ8RxIEzCk2V9lRmKZnuUONHuyr78NMqwQVCeM4DiqlgOaxB1RFEBBLRlWEw2BaKjxluk6aJAId3iCOaRJtrZoZ34iG0XFs4Cgw7Wt1Wm04qmqxCnAEsU4RFYBWA5GPNTaqOcHfB8Ws52GRhakcTwhETiO4QyKOsE2yDauUgggCEcCFwxMTE8rAUFhKtckYVcJsF4nmsathmmw8TzQp+RhuGkGEUJgMOvhuBaFGIgqPiTCHsfPuWz5v49UuPxxZZrakIHAJjx9VLkHA4vgRTeDiGFuyjLbuIUTHbzWqruNuDhG/x+1y1rd0DiDNYkCKKQmqSsGKOUbG5AuGJ9vJYpYThDiG41hjrUYJhBB09foRvd1fr456PUwLbrjr5NXWLu+Vdj+WFmewIkKYNGyhogwZq4ptiBuLtVychAfHE4g6HgVZNvzQ7MaIb9BL/e2npt2m/P073r6vfOVbL61dCFEEmjsGQEFAOAK9yCFVFjAaijKsUeQxOBZBMKQChDJpCrXFrzmHcOzcNYR7f9018t2ut++8rlNMj+8/UrJ4SfXT1UUwJvFo7wtgNBgCx44eBTMav67ZkKmQk0TkzDDjusuHE+c7EfR0ng58u/FZAP47CFicbltz8HD27JJHKpcVoDjfiqASwpA2nWNKmN0zhIDprJd0MBuSEIlSJsullj7QQM9Z39HXngfQD4De7Zc5U35o1w5TbskLxcV5ekeODbnpBljNEqIqQFWKKFXR7w+iozeAjm4/bvZ5gxjqODRcv7MOQN89/sksZ+VzH35YP3ftq0aLbZbRmprHSxoBm1DKhiisKAgND3WHxwOdobZvPg46z30PIMBE/I8mATBxFsdyeemmWkNF7W5jxbY9yRW1e0wPbN9tqni9VmdzLI9hGPb/WWKY44RJcZfiOYJ72J8lPUYF4i6lWwAAAABJRU5ErkJggg==);
+    border-color: #a6d3e8;
+    color: #11689E;
+}
+
+.yo-form-message p, .yo-form-message ul, .yo-form-message ol
+{
+    margin: 0;
+}
+
+.yo-form-message ul li, .yo-form-message ol li
+{
+    list-style-position: inside;
+    list-style-type: inherit;
+    margin: 0;
+}
+
+.yo-form-message.error
+{
+    background-color: #ffcbca;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFUElEQVR4Xp1VbWxT1R9+zj33re3ara5b143h1rGuG8KGTDC8OsSJiSaiCRIg8IEvRoz4DxojfACMvCxRCRESIkokAQnho0TBBNQQBy5sYwtMNmDrf7Lutd3WbX29vcec2xXrEDE+yS95zu885z73d14J/gGHAbenuuTlrFz7DkkUZ4MxMKYDDIhrWu9UKPxpf8fd81tj6MYj8LcGX5jgnOWeta2oZt4HDq9HfqLcDdWRB2hJIJEAS8Qxed+PQGcXAj2++MjQSEMgNHV0Y1f/4GMNzrpsS2Y9VfHVnNUrvPlLlwKjQYTbWhHp84NpCWMAESWY8p0wlbqh6Tr+f6UR/nu+24GJ8Na1rXcbH2lwwiovWrBm+WXv+tctaq4Doe/OY6K5yfgwSyYBxqZHEMNEUBTY5lYja141Btra4btxc6o3OL7qjfaeJkxDSJMzc5ylVcsXXqzavN4iiwqGjx1F6OoVCJIMmmUDVU0g4QmQqQmDU0sWCCEYa/kVgUsXkF9ZiZJKj6XQZr547hlP6UMG2VZLQ8Ura3JkKiNw+iQSg/2Q7LkQZBmIRiEXl8Lx2SkenBs5QVYg2XIQ6+/H2JXLcHq9cOY5cqwCaUAmjltp/e1t6xn7+RwL/W8D61vlYYNrF6fitWeZf3EhCx3/hKXBOc/xvrSu74UqNvXuBhbevY01rZzPzi6qqn9QQX55SZ2zqgLM70f4t5tQ7LmglD4IQRCMSCPdztTIthxMdXdBNqnIsZihsmQdAIhbgKIC9+x1VlcBYs0tEBUFRJIAhhQIgcDbuo40OOc5QkWApYQEnDJow0Owu1ywDo2se6/Ge0Q0Ay6L2eSmdjsmB/wQFBUgFCAZBooJbHICaXDOc0SghkEaRASSkSmY7HbIWsKdJasuMQaIhGt0BqYlQagEUAF/QjBMyVgwXQXnqZwgAsiojAhGFYzrNA0RBSJX8D1uJChvck4pMsEUFSwSTvUBBqfcwPgRIcNAN74R15KGiUBFw4GAMT7YSDA604CBqGaQ0WEwrgYMLqhmrptxVnVjBojOQBhABYHwKUpEI9GYPjam8H2vDQ8+VAFUAjCCxNefpwwYAVFVQJhRqUAgKirCw0FoAo2F44kEcQKuL1dUn17x0uo6m9mMSGsLwAeD/fVGiUagh0bBIdjsgGp6WJPUoBbNhu+XRtwYCv74zmB0o1HfodL8na/WL99XsnQZEtebkIzxpRdTHlwxPgq6cAmkt3eBI3FkH5LNjUC2Pa0xppiazYDZipvfnsc1k3XXW9du7RcAoDMav9DT1T0w0euDVOEFFSgoyPQhEkHicQhllYAo8eCc53hfSkMEY3GlgkL0NzVhWJQHbo1NXkTmCjWUufasqSrd7a1bCZmI0HrupSqgIjA5DlJZA7p1OziSJw6DdbQCWdnG1iXcpLgYgZZWdLa24Zps2bujtWvPzOs692RN2TeLy4rrS2proVgsYPfvQ49GU4uuJYzHhsOoRJZTO89sBsnLR7CtHT3NLehQLT9svt65AUBgpgHnzlO1nlPVjuznizzlyCkpBUnqwEQI4OtCMoYoCpBlhR6NYODqVfT19uGO2XppY9OdTYA2CIA96sksPjT3yZ01NtOW4rxcU7bDAauzAJLVmjqhjAcQCwQx7uvGmH8AffF4pIOqJ7e3+/ZDi//+uDeZ5+wv5tuf21SY+6ZDIuUOkZYoGn+LNej8OiEMUUHECIgvKCl3zvSPHvu+b+gnAKPg9v8SCgDbnGzLsg/nut//qKb8wN4FnoN7n/Ye/LjWe2DnfM/7Hnv2Mq5Jaf87CABx2lCdDmU6R/AY/AH1Fih4d6s3jwAAAABJRU5ErkJggg==);
+    border-color: #eb979b;
+    color: #9b4449;
+}
+
+.yo-form-message.success
+{
+    background-color: #e1f1c0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEzklEQVR42p2UfUzUdRzHP5AGOmKdrAgfpyUWmSXc2EEqJoTzAUnUhlj6R8bD1tQVDtE5yWX4gID3DJZwggYs4TDMsMIwQCQeDu7oAMGTiTOzxvKhhUvffT7jAq8Ro97be/e97/fzfn0+39890KhS0qyQXbQlJtO7d51agZhsL7yR5YHoLHcsP0i9i9Noy5xtNIv+q8atJd/AVNqbUqIaKGzYgIvXU9Hx2z60/JyCmmuJONcdh9xaFbZ95o3VR2ggfB/tDU0l3zHBpyZSaKzW1/5l+w7cQxH6HnyI831LUGYPQGl7AE61z4XZ/hLOdoXg654VMF0Kwrt57lhxiOyL9lDoqHDFBgpOyn/+ble/Ebehx5nL86G78Bi01QT1+WFrviMYagjH6r1wqm0uymzh2FnqzY+P7qpSKXhE+LytNHO91qe//dcMXB1IQX6TAtkCqiXk1LEvulr2jGw9Nypo8kWFfSl2lysQdZj6F++mmfRP8fVKiprewtX7O5HX9ASOVAtodBvZutpBH29+CuW2CLxX6ImIj6jEBT4jniI/KPJH553dMHcGIEvg9aNbz3ANg/MaJ0PHN9Hyutjqj/yGIMTpCSHbKXKowcJd7ulHa8Nh6d8ItTySS+yGf7eRfegCodqxFffu98HUPB0abmLg/dP2MLxfPAFL9lA6icYvpCmxas+eio41+OLyPGjrR4cbLjH8e0JVTzwe4k+Ibtyuhubi4FmRdTayq+YgOoN6pq6iKeS1lJRv53ig9vpGFFp9oJfpf+Ap2Zkc0jM0l9eyJxMeYPi3VxLxqOy38qCpH8wUtPrgZPMCrFETZqwlJT35Oqni9G443/smTG2TYGgkp8fjbPca5PAHrpXpm3jyOoY7NgN4MAS33tTisAzCcKkxWSehxLIYa7nB1ChS0dPLSbVOQzjTsQzH+QYGLlLzLU53RUDU8UshMnm69BpClSMewMMheNtNHTIYrmV4LueMzgbFlrDhBtOiKSSG35RZI1Bg4xs0EzQcuDPQOwRq+UmNyp4EiIbhRyCNdY0M50wO28g22RQoaeUb8NDCpinLSMm/wD/y6pU4+eNkGC0ENU9yzrEJDzCAkWS9xY+lgeECtgxbsieYcYxZq5kpbPJQkF9kGlXtrfBFWYcSemfhAZ7uqytx8rxdJ2d4BsO1DM9tdW1gYJcyQ1jCfJzZJApKop0Jx91gbl+CT20TYOCgkX2ogZs4NgzBLbc0yGzkyVuc8EcsGcmWMSPB5AZh0t/yX0GBKw/Qjf2V0/nDXQRDGzewcpCdyZNWXFmFqmtJ0FgYLkCrq6VWMmbOCkNYs5dTED2qV96htFgd4VjdfJi7g2G0cYiDuewsnjijyfne5go3yCvvSUaywhAWjSCfBclUuTmPIP/x5T2h+MQ+ETobcTOBOOFOG9hyJjVSKxnJCkNYNILc2M+E7aBvNh4l/rk/B7P9NXze/TLyO7xhtDPUaVnLnpyVco3USkaywiBhjaJpQfFkiDpIvyeXeHH4WZxoVuF0ZwTKOyNhZpfzWvbkTGqkVjKSpTFIuk/yC6SYV5Pp3MqPybGJp+NvmYtlT86kRmol48yOWR5s74l+tOCFdbT9xThKD1hP+8Wylj05kxpn7f+WTDXOCfEUy1r2xjLxX8E9EvOgJkPrAAAAAElFTkSuQmCC);
+    border-color: #b5d56d;
+    color: #62a426;
+}
+
+.yo-form-message.warning
+{
+    background-color: #fef0b1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAB4FBMVEUAAAAAAAAAAAAAAAAAAAAAAACPNgiQOAmARx6dXR+kVhg4LRNCMxaJMRCXRA6PPACPPQGsZSusYytOJRJOJhNFGA5FFw5FFg2rYiegXyutXCutXSymYi22bC62bC63bi29cy69dC/GfDTAeznEfz3GhkTGhkXJhjzJh0HOkUvWmUrYpGDYpWPWnlTepUzfp0j/1lH/6Vz/007/z0nfp0f/yUH/zEXgrUn/qBPfrFvgsGfqu0/qvV//vC7swm7/wzv/xT3tw3f/xjr/xzrxyFz/xz3/yDv/ykz/zET/zUb/zkL0zGv/0Ur41Fv/1lD61Wb/1WH/11f/2k/91XD/2lL+32H/4lv/6Vv/9mFTWGVbXnNgZF9nZmZtamtpbW9yb2BycHGBc1F3dWV0dHZ8emt5eX2Le0x/fnCEg3afklSnmVPWm0LYnUPhqkbhqkf/sB3/shz/sh7/siD7tCb/uSj8ui//uy7/viD/vSb/vx/8vjP/viz/wR78wjf/wTj/xDb8xjv/yif9yT//zSz7y0X/zD//0C//z0P/zFT/zFb/1DP/0Ej1zXX/0Uf70031znf/00j/0k761FL/2Df+1U7/1U3/2Tz+1k//21D/3E3232T24WL/6Ez/6lz/61z/7Fp7JrKDAAAAL3RSTlMAAQIDBAULDBAQGB0gJDIzM1NUV1ldXV5fYmRlZoGCi46Om7C+yMjQ0+H1/f3+/op8j4EAAAEmSURBVHjaY2CgAHAqKXFilVBwdFTEJs6v09mhLYBFQrW/qLBHDVNcwsrdwsLdSgJdnEszOL+ypiBYkwtNQt7OoTwtsdjNTh5VnE83oKQxOrK0IkCXD0VCxdu5rDk+pqra2VsFWVzQMtC2ri0ptrbeNtBSECHOpuHvZO/QlZLQ4Gbv5K/BDpeQtfFzNTWdnJ7c1Grq6mcjBxPn1Qr18jAzm5aR2tJu5uEVqsULlVB2CfI0NjbunTJ9QrexsWeQizJEXEgvzMfIyGjizKzMvqlAhk+YnhBInEPdN8QABObERU2aAWKE+KpzACWkrSPCDUFg/uxZ8+aCGOER1lJACclscxN9MMjLhTBMzHNkgBLcwuKiECAmBmWIi/AAJRiZWTEACxMZSQMAWRhGmxjYM8gAAAAASUVORK5CYII=);
+    border-color: #ddca76;
+    color: #a98b15;
+}
+
+.yo-form-message.info
+{
+    background-color: #bce5f7;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFhklEQVR4Xp1Va2wUVRT+7szsTHd2u6/Sd9m22wKttBTC0xYfVFrRgJpgGlETY1BjJKA8GgwJUYwWSDQhgEaN/iAS/mgUIiQ8ClrEakGhtUDtY9c+WHbb7nZpabudfcx19rrtWiJiPMnJnJz5zv3ufOeeOwT/am84hNULVqenWrcKgs5OKQVAQQlBJBzqHfKPfKA0dR3HwDsu3MX+mWDuu+lCXs6GhaWO7YtKs8QlJVmwZ+oBCkSjQCgCOPtGcPGqG83t3pDT6d477u3/EE3b+u9NUH6g3F6U//lTVSVFzzyWi9EJoLHVgz/cAYQjKoMIAg97ugVlhWmglOCr09dx4RfX7x73wHp65uXGuxPM3b2k7NFl5zY+t9gwb7YBR+pdOH3xBpQQhRKJgtBElajjoJd4PFiWjZWL8vBzswdfn2kdc7Z2VtILmy4ibtwUU+X+/ILlZae2vLjUkJejw87PLuNoQw8EjofZIGouIaiCuUmLzbIEnnA42dSLT461YN6cGXiyqsSQPTvvlLz603zETZgM9MmWvevWzLfYMyXs+aIFrpujSLfJoADGlCgcaTLeXzeHYT862wfXYBAGSYCkebf3Ng6faUPNijlYPD/PUt8wshdADaZsXl31qrpL9LyP0g1fuuis2gZa/l4TrajTXHvmbGmgB+t7aNxiMctVxDExbPGbDfSVI11030/DtHTzWYrKA9VTEllzM1YsKs2BfySEH3/zIDNFhijwEHgOOoGDIUmAfzyCSfOPRdjutXcxDMOmWWRc6RqExo98ewrMZuMKJhH4J7JzCrJqigtsaGobhF7ktQIONN5NAiDNJOF4iw8d/UGW7fEFkWWTwBECZnFkEuXgdAdQYLfhssVSM1y4/qAAQZ8pywaHPUPEicZhyEk68DyHSYuqFDOSdcg0i7gRUFjOZhRZX3Q8AUXCJAiaChNYMCsDRJAcEA2ZAqgixJWCEtWKdAQ8RxIEzCk2V9lRmKZnuUONHuyr78NMqwQVCeM4DiqlgOaxB1RFEBBLRlWEw2BaKjxluk6aJAId3iCOaRJtrZoZ34iG0XFs4Cgw7Wt1Wm04qmqxCnAEsU4RFYBWA5GPNTaqOcHfB8Ws52GRhakcTwhETiO4QyKOsE2yDauUgggCEcCFwxMTE8rAUFhKtckYVcJsF4nmsathmmw8TzQp+RhuGkGEUJgMOvhuBaFGIgqPiTCHsfPuWz5v49UuPxxZZrakIHAJjx9VLkHA4vgRTeDiGFuyjLbuIUTHbzWqruNuDhG/x+1y1rd0DiDNYkCKKQmqSsGKOUbG5AuGJ9vJYpYThDiG41hjrUYJhBB09foRvd1fr456PUwLbrjr5NXWLu+Vdj+WFmewIkKYNGyhogwZq4ptiBuLtVychAfHE4g6HgVZNvzQ7MaIb9BL/e2npt2m/P073r6vfOVbL61dCFEEmjsGQEFAOAK9yCFVFjAaijKsUeQxOBZBMKQChDJpCrXFrzmHcOzcNYR7f9018t2ut++8rlNMj+8/UrJ4SfXT1UUwJvFo7wtgNBgCx44eBTMav67ZkKmQk0TkzDDjusuHE+c7EfR0ng58u/FZAP47CFicbltz8HD27JJHKpcVoDjfiqASwpA2nWNKmN0zhIDprJd0MBuSEIlSJsullj7QQM9Z39HXngfQD4De7Zc5U35o1w5TbskLxcV5ekeODbnpBljNEqIqQFWKKFXR7w+iozeAjm4/bvZ5gxjqODRcv7MOQN89/sksZ+VzH35YP3ftq0aLbZbRmprHSxoBm1DKhiisKAgND3WHxwOdobZvPg46z30PIMBE/I8mATBxFsdyeemmWkNF7W5jxbY9yRW1e0wPbN9tqni9VmdzLI9hGPb/WWKY44RJcZfiOYJ72J8lPUYF4i6lWwAAAABJRU5ErkJggg==);
+    border-color: #a6d3e8;
+    color: #11689E;
+}
+
+.yo-form .yo-form-item.large .yo-error, .yo-form .yo-form-item.large label.error, .yo-form .yo-form-item.large span.error, .yo-form .yo-form-item.large div.error
+{
+    width: 100%;
+}
+
+.yo-form .yo-form-item.medium .yo-error, .yo-form .yo-form-item.medium label.error, .yo-form .yo-form-item.medium span.error, .yo-form .yo-form-item.medium div.error
+{
+    width: 75%;
+}
+
+
+
+.yo-form .yo-form-item.small .yo-error, .yo-form .yo-form-item.small label.error, .yo-form .yo-form-item.small span.error, .yo-form .yo-form-item.small div.error
+{
+    width: 55%;
+}
+
+
+
+.yo-form .yo-form-item .yo-error, .yo-form .yo-form-item label.error, .yo-form .yo-form-item span.error, .yo-form .yo-form-item div.error
+{
+    width: 100%;
+    font-size: 11px;
+    display: block;
+    width: auto;
+    float: none;
+    margin: -4px 0 0 0 !important;
+    padding: 10px 8px 6px 8px;
+    cursor: default;
+    background: #c83139;
+    color: #ffffff; /* CSS 3 */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    -khtml-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.yo-form .yo-form-item .yo-error.plain, .yo-form .yo-form-item label.error.plain, .yo-form .yo-form-item span.error.plain, .yo-form .yo-form-item div.error.plain
+{
+    background: none;
+    color: #c83139;
+    margin: 0;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+/* (14) Colorpicker Input
+================================================== */
+
+.yo-colorpicker
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAACwVBMVEUAAABMAAAAAAAAAEEAAAAIAAAAABAVAAAcAAAAAB2ihgCAKxgyepa6BpqkcBYAntPYDsy2dBUlLHmOFxTwtwB8FY1rdz29pgAKrCnNHcAVP8MjiNjJGb7ZrQrYrhjUqQDNCsAYht4rj96GF5zHoQB5mzulJhWjLBbEexTEnQCjAeylKxXGnwDKfxTGfRMeMIUMwjQJx0zYSwdumga7D/wzlqLsoRWBiVF+hlIsT7n4uCcjSr0yV9QtvlJ9hU07LIwsVsAmulLTFNMW0V6YJ9iUKKE8NZIZvkfFUhOVHN08MY6YLd7FWBuXJZw/k6O/ShCVJ5xYsBHdlClAkqTelDYq0urYkSBBk6MYyElhpRXLHMHiSDQ+1nORvBU11G24PfX2sD9gpxb2skwYy0ks3mXvpzLCI8EYyUq2Nfu6P/jDJMFbUeL/7iY1xe1cW+TINP1gXufJLv7JMf1DyO39JPpBxu2gxDGYwSFDcdDbR0ObyRH/Sf8xa9pX0f3/Qf/YV1LWOjVSfM//Sf/89Vj881FJ0f9i1f/270/tZEvvbkn/2ij9x0v/3TnwdVLvPOT/3Tf9ykz9yE2C0SiK4CKV4EFkcOjxV1PoY2BKXd1JYurBLP/kRC1WcfpZcu9Qd//yTDhkc+XvTkhXfv9zeOLzVkTLSP/qXUv1W0r3W0rQTv/rStvMU/7tTNvxS+bxTOfvT+PwUePvV+LTYv/VY/8k32/yYOct3nR/ygY03Hb4ZeE53Hjccf8+3HrYdP+HySzbd/9Ov/865H9RwP+M0hxQxf8/54RRxv+QzDxH5IaQzT5Ryf9cxf/5fd34ft1N5o2W0kNnx/9Z0v9Z0///sTWh5yRY+Y6Y8h9Y/ZFc/JL/vEGo7S76v0v6wU7/vlP7wk7/w1L/xFz/xlX/3Dr/3D3731j/4Fb/41/65Hb/5Gn/5Wj75XO221UnAAAAmHRSTlMAAQMDBAQEBAQEJTU3Ozw8QEFESE9TVFRbXl9hYWJiZGRlZWZmZ2hpaWlrbG1ub3FyeICBhYyMlJiZm5ycnp6fn6GhoqKkpaWlpqenqKioqaqrrK6urq+ys7S0tbW2tra3uLm6urq8vb2+wMfHyczMzc3O0tLT1NXX3N3d3t7e3+Dg4+Tl5ubn6evr6+3v8PPz9Pn8/Pz9/at8YwcAAAEiSURBVHjaY2CAAoG+dWtLVCcdPxlruGPPLmcGDCC5df2GavMp+86X2Z7bdiKGCUOBzMZVa+osJm8/XO54dMvBOBYMBQo7z55psrt25VaV+/WrN1IwFfBGpWU5iQVGJhpLJEekG2C6gT+3uDRUKjuvwEarML/IBFOB0oUDh9ocFs9Y0Oi9ctbSTE4MBdKnjxyrtZw6c26Fy+bVm+LZMBQonrp0sdV6zrxFNZ679+7PYMZQwOMXHG4qZO/mpS/q6xqgjOkGka6e/hyjjs7eaLMJ3ROtGDEUyD199LjFZ/rsZfUhDy7fTWLHUCD77MXLZo9p81dUBj28eT+BFUOB/JPnr9r9Fy5Z3hB27/adVA4MBVwqmjri3Grq2sJ8uhp6ggxEAwBHZWtsKW5e4gAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 150px !important;
+    padding-right: 32px !important;
+}
+
+/* (15) Dual List Box
+================================================== */
+
+div.yo-dualbox
+{
+    position: relative;
+}
+
+div.yo-dualbox .countLabel
+{
+    margin-top: 4px;
+    display: block;
+}
+
+div.yo-dualbox .yo-dualbox-col1, div.yo-dualbox .yo-dualbox-col2, div.yo-dualbox .yo-dualbox-col3
+{
+    width: 37%;
+    float: left;
+}
+div.yo-dualbox .yo-dualbox-col4
+{
+    width: 6%;
+    float: right;
+    margin-top: 150px;
+}
+
+div.yo-dualbox .yo-dualbox-col2
+{
+    width: 20%;
+    text-align: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+div.yo-dualbox .yo-dualbox-col2 button
+{
+    width: 32px;
+    height: 32px;
+}
+
+div.yo-dualbox .yo-dualbox-filter
+{
+    margin-bottom: 1px;
+}
+
+div.yo-dualbox .yo-dualbox-filter label
+{
+    display: block;
+}
+
+div.yo-dualbox .yo-dualbox-filter .yo-textinput
+{
+    float: left;
+    margin-right: -32px;
+    padding-right: 36px;
+}
+
+div.yo-dualbox .yo-dualbox-filter button
+{
+    float: left;
+    margin: 0;
+    width: 32px; /* CSS 3 */
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    -khtml-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+div.yo-dualbox button
+{
+    outline: none;
+    font-size: 11px;
+    margin: 2px;
+    height: 30px;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #666666;
+    border: 1px solid #ababab;
+    font-family: Tahoma, Arial, Helvetica, sans-serif; /* CSS 3 */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    -khtml-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+div.yo-dualbox button:active
+{
+    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+    -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+    -khtml-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* (16) Customfile Input
+================================================== */
+
+.customfile-input
+{
+    position: absolute;
+    height: 90px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.customfile
+{
+    border: 1px solid #c5c5c5;
+    padding: 6px 7px;
+    color: #323232;
+    margin: 0;
+    text-align: left;
+    background-color: #ffffff;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -o-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -khtml-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+}
+
+.customfile-disabled
+{
+    opacity: .5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    cursor: default;
+}
+
+.customfile-feedback
+{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.customfile-feedback-populated
+{
+}
+
+.customfile-button
+{
+    outline: none;
+    float: right;
+    padding: 11px 9px;
+    margin: -7px -8px -7px 2px;
+    cursor: pointer;
+    z-index: 9999;
+    font-family: 'PTSansRegular' , Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0;
+    color: #666666;
+    border: 1px solid #ababab;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    -khtml-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -khtml-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8e5e5), color-stop(100%, #e0e0e0));
+    background-image: -webkit-linear-gradient(#e8e5e5,#e0e0e0);
+    background-image: -moz-linear-gradient(#e8e5e5,#e0e0e0);
+    background-image: -o-linear-gradient(#e8e5e5,#e0e0e0);
+    background-image: linear-gradient(#e8e5e5,#e0e0e0);
+}
+
+.customfile:not(.customfile-disabled):active .customfile-button
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2) !important;
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2) !important;
+    -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2) !important;
+    -khtml-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* My style sheets starts from here*/
+
+label
+{
+    /* padding-left:12px;*/
+    margin-top: 12px;
+    text-align: left;
+    text-indent: 13px;
+}
+
+.formheader
+{
+    background-color: #C5D52B;
+    padding-left: 12px;
+    margin-top: 12px;
+    vertical-align: middle;
+    height: 25px;
+}
+
+/*Code changes by Yogesh Chaudhari at 26-06-2012*/
+
+.formtabheader
+{
+    background-color: #D8D8D8;
+    font-weight: bold;
+    padding-left: 12px;
+    margin-top: 2px;
+    vertical-align: middle;
+    /*margin-left: 2px;*/
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.formtabSubheader
+{
+    background-color: #D8D8D8;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: 2px;
+    vertical-align: middle;
+    margin-left: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.formDealtimeLineheader
+{
+    background-color: #D8D8D8;
+    font-weight: bold;
+   
+    margin-top: 2px;
+    vertical-align: middle;
+    /*margin-left: 2px;*/
+    height: 20px;
+    margin-bottom: 4px;
+}
+
+.formplus
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEUAAAAyMjKnL43AAAAAAXRSTlMAQObYZgAAABFJREFUeNpjkGAAwf9ACGYBABSAAo/1JFffAAAAAElFTkSuQmCC);
+    /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEUAAAAyMjKnL43AAAAAAXRSTlMAQObYZgAAABFJREFUeNpjkGAAwf9ACGYBABSAAo/1JFffAAAAAElFTkSuQmCC);*/
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.formminus
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEUAAAAyMjKnL43AAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYACD/0AIBgAQAAH/9klfcgAAAABJRU5ErkJggg==);
+
+  /*  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEUAAAAyMjKnL43AAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYACD/0AIBgAQAAH/9klfcgAAAABJRU5ErkJggg==);*/
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+
+.mwschild-button-row
+{
+    padding: 3px 24px;
+    border-top: 1px solid #bcbcbc;
+    text-align: right; 
+}
+
+
+.modeltextarea
+{
+    border: 1px solid #c5c5c5;
+    padding: 2px 3px;
+    color: #323232;
+    margin: 2px;
+    background-color: #ffffff;
+    outline: none; /* CSS 3 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -o-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    -khtml-box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1);
+}
+
+
+
+.yo-form label.error
+{
+    width: 100%;
+    font-weight:normal;
+    font-size: 11px;
+    display: block;
+    width: auto;
+    float: none;
+    margin: 0px 0 0 0 !important;
+    padding: 10px 8px 6px 8px;
+    cursor: default;
+    background: #c83139;
+    color: #ffffff; /* CSS 3 */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    -khtml-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+
+.yo-form label.error.plain
+{
+    background: none;
+    color: #c83139;
+    margin: 0;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+
+
+
+.CreateFolder
+{
+   display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+	background:url('Styles/plugins/elfinder/images/toolbar.png') no-repeat; 
+	background-position: 4px -258px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+    }
+    
+ .Deletefolder
+{
+   display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding-top:0;
+	background:url('Styles/plugins/elfinder/images/toolbar.png') no-repeat; 
+	background-position: 3px -748px; 
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+    }
+    
+    
+  .EditFolder
+{
+   display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+	background:url('Styles/plugins/elfinder/images/toolbar.png') no-repeat; 
+	background-position: 4px -434px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+    }
+    
+    
+    .Deletefile  
+{   
+     display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+	background:url('Styles/plugins/plupload/images/delete.gif') no-repeat; 
+	background-position: 2px 3px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+   }
+   
+   
+.download  
+{ 
+     display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+	 background:url('Styles/plugins/plupload/images/download.gif') no-repeat; 
+	 background-position: 2px 3px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+    
+ }
+   
+   
+.movefile  
+{ 
+      display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+    background:url('Styles/plugins/plupload/images/move_icon.jpg') no-repeat; 
+    background-position: 2px 3px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+  
+}
+
+
+
+    .DownloadHashfile  
+{   
+     display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+	vertical-align: top;
+	height:22px; 
+	width:23px;
+	margin:3px 2px;
+	padding:0;
+	background:url('images/hash-icon.png') no-repeat; 
+	background-position: 3px 3px;
+	border:1px solid #ccc;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;  
+	cursor:pointer;
+   }
+
+/*End code*/
+
+.fileimport_progress_bar {
+	width: 0;
+	 background: #CDEB8B;
+	
+}
+
+
+/* resolved error in pricing input */
+ .ReqLabel2
+  {
+color:Red;font-size:14px;
+}
+
+ .yo-fullwidth
+{
+    width:104%;
+    }

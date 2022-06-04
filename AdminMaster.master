@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Exam</title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/misc.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/panels.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/button.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/form.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/24x24.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/16x16.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/yo.theme.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/core.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/table.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/rightmenu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Styles/jquery-ui.css">
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="../Scripts/Site.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="mainPageContainer">
+        <div class="ContainerTopMaster">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td bgcolor="#5C7B9C" align="center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" height="58">
+                            <tr valign="top" bgcolor="#5C7B9C">
+                                <td width="12%">
+                                    <span style="color: White; font-size: 24px; font-weight: bold; padding-left: 10px;">
+                                        Online Exam </span>
+                                </td>
+                                <td width="88%" bgcolor="#5C7B9C" align="right">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <div class="menu">
+                                                    <ul>
+                                                        <li><span style="color: White;">Welcome
+                                                            <asp:Label ID="lblLoginName" runat="server"></asp:Label></span></li>
+                                                        <li><a id="lnkChangePassowrd" href="../Admin/ChangePassword.aspx">Change Passowrd</a></li>
+                                                        <li>
+                                                            <asp:LinkButton ID="lnkLogout" runat="server" Text="Logout" OnClick="lnkLogout_Click"></asp:LinkButton></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="cleaner">
+    </div>
+    <div class="mainPageContainer" style="width: 100%">
+    </div>
+    <div class="cleaner">
+    </div>
+    <div class="midContainer">
+        <div style="height: 10px;">
+        </div>
+        <div class="midContainer3">
+            <div class="cleaner">
+            </div>
+        </div>
+        <table width="100%">
+            <tr>
+                <td id="divmainHeader" valign="top" style="padding-left: 10px">
+                    <div id="menu8" style="vertical-align: top; display: block; float: left;">
+                        <table id="AdminForEmployeeMenu" runat="server" width="100%" border="0" cellspacing="4"
+                            cellpadding="4">
+                            <tr>
+                                <td width="9%" align="center">
+                                    <img src="../images/alarm.png" width="15" height="13">
+                                </td>
+                                <td width="91%" align="left">
+                                    <a href='../Admin/Section.aspx'>Exam Section</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="9%" align="center">
+                                    <img src="../images/lock.png" width="15" height="13">
+                                </td>
+                                <td width="91%" align="left">
+                                    <a href='../Admin/QuestionPaper.aspx'>Question Paper </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="9%" align="center">
+                                    <img src="../images/group.png" width="15" height="15">
+                                </td>
+                                <td width="91%" align="left">
+                                    <a href='../Admin/Candidate.aspx'>Candidate</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                </td>
+                <td width="86%" id="trmaincontaint" valign="top">
+                    <div style="display: none; padding-left: 20px; padding-bottom: 10px;" id="DivEmpDetails"
+                        runat="server">
+                        <table width="95%">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblEMPEmployee" Font-Bold="true" Font-Size="20px" runat="server" CssClass="Label"></asp:Label>
+                                </td>
+                                <td id="trProfileConnect" runat="server" align="right">
+                                    <img src="../images/plus.png" border="0" alt="Join" />
+                                    <a href="#">Connect </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <font color="maroon"><i>Back To <b>
+                                        <asp:HyperLink ID="HypeDashboardUrl" runat="server"></asp:HyperLink></b></i></font>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width: 99%; height: 100%; vertical-align: top" id="maintabdiv">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="cleaner">
+        </div>
+        <div style="height: 16px;">
+        </div>
+    </div>
+    <div class="cleaner">
+    </div>
+    <div class="mainPageContainer">
+        <div class="bottomContainer">
+            <div class="bottomContainerLeft fleft">
+            </div>
+            <div class="bottomContainerMid fleft" align="center">
+            </div>
+            <div class="bottomContainerRight fleft">
+            </div>
+        </div>
+        <div style="font-size: 9px; padding: 0pt 20px 5px 0pt; display: none;" class="text01 fright">
+            Powered by<strong> <a target="_blank" href="#">YoSwapna Solutions Ltd.</a></strong></div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,762 @@
+/*
+ * MWS Admin v1.5 - Core Stylesheet
+ * This file is part of MWS Admin, an Admin template build for sale at ThemeForest.
+ * All copyright to this file is hold by Mairel Theafila <maimairel@yahoo.com> a.k.a nagaemas on ThemeForest.
+ * Last Updated:
+ * April 29, 2012
+ *
+ * Table of Contents
+ * ==================================================
+ *
+ * 1. Header
+ *    1.1 Logo
+ *    1.2 User Toolbar
+ *    1.3 User Toolbar Dropdown Menu
+ *        1.3.1 User Toolbar Dropdown Styles
+ *        1.3.2 User Toolbar Toggled Dropdown Styles
+ * 2. Main Wrapper
+ * 3. Sidebar
+ * 4. Search Box
+ * 5. Navigation
+ * 6. Main Container
+ * 7. Footer
+ *
+ */
+ 
+/* (1) Header
+================================================== */
+
+div#yo-header
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAA+CAYAAAAiVZsnAAAFOElEQVR42p1XTUgcSRQup3XG0Z5pe6ZnHJ0xccd1NOtqJLsJHiR6yCkkIKKggpJDVDRRFLwrCF7Egx5CEhJEEFEj5qQkCkaIEkxC/DsImoMYRTAnIZd4cd+3zFuKYppZ0vD1q6/e69evXr3qrhKXl5eFjK9fv96Q+dLSUiXk3NzcrXhfCeuYi58/fxacnp7GLi4urr19+/Y6Gd8AwKED9vb2iplDt7CwUL66unoLXJyfn+e/efPmb0jg9evXf5LBv3xjYyMGeXZ2Vnx8fBxlmx8/fsS4Lba3t4tHRkbKnjx5UrK+vv7b9+/ff5+eni6iqCLv3r2LgqMNTExMFE9OTv4FW+jQJ/r7+/9YW1sLj46OFn779i3/4OAg9OnTp9zBwcFrz549u47+oaGhYvSDQzJgLz5+/GgBr169ikIyaBgYWpD5/v5+mNsURej58+cxtAUZmZubmznd3d0RtB88eJAPjnZDQ0MB5MzMTN6LFy8sAJz1gPjw4UOAPHoYzO/cuXNV5m1tbQGZMwQl0A2Ul5fntra25qNdUlKSBzk/P++HZDQ3NxdAdnZ26vX19cb79+9N0dfX5wJWVlYMSJk3NTW50S4tLfV1dXXlqnpIQV5Tab71WCyWgTbzmzdvunw+XxCcps+AhA3rLcvyoy22trYy6EqlDgddFjhJP7imaR5wklkEL/T3798PQwc4nU6XoFuKECIAeffu3QgkwJweSkWbpEbV6CZbT/wZ/+zsrE5SmLjV1tbmCOkaGBjIIpFGsAhYdOlxjsscGxvzsi0r/w/3EbR79+6FEymdBEecc5+mPMz6hBc7c9hF8vnz54xEkTnUMaEvyTB8ca4lehNqIyg7k8acriTcksM2ErwpTeKaoreQN/nFPiUSJ3jcUWYC5+Lly5ceNjZtxmwhColnJkywGuajR4/8zBXnBpzEuVNOmKmGyQmjZRuSI+OEytPN5eyVw1QSaKlhcyTsyVbJoSp6S+K2SjXBBgjXQbKF4+OHOaHKqpVyIK0ydRhSAnV2zlxKqFJENglsbGzMlqZSt8uBLk2dlcB5mqQ3oRNcFIozjfNAf+zMBLNhCPlSiiiNuTIMQw6bnSebDTUyh/zN/KWPBz/M5a8a60nqQuMlLF8OfhMvLHZo40xPtqRNiWvK2rDg2PZhjiieXT3uzLJx7lM/oBrexFPDF+0LLDaWnDlgz4X1yx8TtjcIXnUY6sOI1LZO1K9x/CdjJPkjOVSlLnN2YLNKTblK1YpUuZbop8JcNTbkMG0WmvTTkWpbnhZWqtlPVoEqT/7f4MTYfLrtfrRcaKZcdD55fUtF5E00dZA8W/J33oRCGrMl14Htf4N3JjbG7ExTpo4Qjy4QCKQwTk5O3CSxJ/QwV/UpKSl+5thHiqKiIg2YmprCBjIAuFwus6amJox+cEg6lGRCMlpaWrIhhcfj8dPGWa+srEwFwuGw++nTp0YoFMoAh5T10WjUBU7b45Cu6wFkO6+qqiq9oqLCHQwGs2nLn1NXV+dkLC4ueiGhI2cB5jSEELigbbyLnLirq6v1x48f54Bz3/LysqFy2mxnAOgDF3SgcgM9PT0ROmhEysrKcsHpVGZCPnz4UEc/c0ZHR8cVSDE+Pp5Jxxh/e3u7ifbt27cjdJLLQ5tBJ5QCSHprFtuzTuzu7gbo8ORhUEVGaQauUHHlxfuyZb1qL758+eKlfb9J50OLzoqF4IzDw8MgJC2oqyqn404OuOjt7c2nsYR3dnZyj46OsgAar59OrNloQ0+nsyD48PDwfzZ0yo1A/gN77AR6kNgNOQAAAABJRU5ErkJggg==);
+
+	/*background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAA+CAYAAAAiVZsnAAAFOElEQVR42p1XTUgcSRQup3XG0Z5pe6ZnHJ0xccd1NOtqJLsJHiR6yCkkIKKggpJDVDRRFLwrCF7Egx5CEhJEEFEj5qQkCkaIEkxC/DsImoMYRTAnIZd4cd+3zFuKYppZ0vD1q6/e69evXr3qrhKXl5eFjK9fv96Q+dLSUiXk3NzcrXhfCeuYi58/fxacnp7GLi4urr19+/Y6Gd8AwKED9vb2iplDt7CwUL66unoLXJyfn+e/efPmb0jg9evXf5LBv3xjYyMGeXZ2Vnx8fBxlmx8/fsS4Lba3t4tHRkbKnjx5UrK+vv7b9+/ff5+eni6iqCLv3r2LgqMNTExMFE9OTv4FW+jQJ/r7+/9YW1sLj46OFn779i3/4OAg9OnTp9zBwcFrz549u47+oaGhYvSDQzJgLz5+/GgBr169ikIyaBgYWpD5/v5+mNsURej58+cxtAUZmZubmznd3d0RtB88eJAPjnZDQ0MB5MzMTN6LFy8sAJz1gPjw4UOAPHoYzO/cuXNV5m1tbQGZMwQl0A2Ul5fntra25qNdUlKSBzk/P++HZDQ3NxdAdnZ26vX19cb79+9N0dfX5wJWVlYMSJk3NTW50S4tLfV1dXXlqnpIQV5Tab71WCyWgTbzmzdvunw+XxCcps+AhA3rLcvyoy22trYy6EqlDgddFjhJP7imaR5wklkEL/T3798PQwc4nU6XoFuKECIAeffu3QgkwJweSkWbpEbV6CZbT/wZ/+zsrE5SmLjV1tbmCOkaGBjIIpFGsAhYdOlxjsscGxvzsi0r/w/3EbR79+6FEymdBEecc5+mPMz6hBc7c9hF8vnz54xEkTnUMaEvyTB8ca4lehNqIyg7k8acriTcksM2ErwpTeKaoreQN/nFPiUSJ3jcUWYC5+Lly5ceNjZtxmwhColnJkywGuajR4/8zBXnBpzEuVNOmKmGyQmjZRuSI+OEytPN5eyVw1QSaKlhcyTsyVbJoSp6S+K2SjXBBgjXQbKF4+OHOaHKqpVyIK0ydRhSAnV2zlxKqFJENglsbGzMlqZSt8uBLk2dlcB5mqQ3oRNcFIozjfNAf+zMBLNhCPlSiiiNuTIMQw6bnSebDTUyh/zN/KWPBz/M5a8a60nqQuMlLF8OfhMvLHZo40xPtqRNiWvK2rDg2PZhjiieXT3uzLJx7lM/oBrexFPDF+0LLDaWnDlgz4X1yx8TtjcIXnUY6sOI1LZO1K9x/CdjJPkjOVSlLnN2YLNKTblK1YpUuZbop8JcNTbkMG0WmvTTkWpbnhZWqtlPVoEqT/7f4MTYfLrtfrRcaKZcdD55fUtF5E00dZA8W/J33oRCGrMl14Htf4N3JjbG7ExTpo4Qjy4QCKQwTk5O3CSxJ/QwV/UpKSl+5thHiqKiIg2YmprCBjIAuFwus6amJox+cEg6lGRCMlpaWrIhhcfj8dPGWa+srEwFwuGw++nTp0YoFMoAh5T10WjUBU7b45Cu6wFkO6+qqiq9oqLCHQwGs2nLn1NXV+dkLC4ueiGhI2cB5jSEELigbbyLnLirq6v1x48f54Bz3/LysqFy2mxnAOgDF3SgcgM9PT0ROmhEysrKcsHpVGZCPnz4UEc/c0ZHR8cVSDE+Pp5Jxxh/e3u7ifbt27cjdJLLQ5tBJ5QCSHprFtuzTuzu7gbo8ORhUEVGaQauUHHlxfuyZb1qL758+eKlfb9J50OLzoqF4IzDw8MgJC2oqyqn404OuOjt7c2nsYR3dnZyj46OsgAar59OrNloQ0+nsyD48PDwfzZ0yo1A/gN77AR6kNgNOQAAAABJRU5ErkJggg==);*/
+	background-repeat: repeat-x;
+	border-bottom:4px solid;
+	z-index:1;
+	position:absolute;
+	top:0; left:0; right:0;
+	
+	-moz-box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
+	-o-box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
+	-khtml-box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
+	box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+	/* (1.1) Logo
+	================================================== */
+	
+	div#yo-logo-container
+	{
+		width:180px;
+		height:58px;
+		float:left;
+		padding:0 10px;
+	}
+	
+	div#yo-logo-container #yo-logo-wrap
+	{
+		width:180px;
+		height:58px;
+		text-align:center;
+		vertical-align:middle;
+		display:table-cell;
+	}
+	
+	div#yo-logo-container #yo-logo-wrap img
+	{
+		max-width:180px;
+		max-height:58px;
+	}
+	
+	/* (1.2) User Toolbar
+	================================================== */
+	
+	div#yo-user-tools
+	{
+		float:right;
+		padding:9px 0;
+		margin-right:10px;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu, 
+	div#yo-user-tools #yo-user-info
+	{
+		display:inline-block;
+		float:left;
+		position:relative;
+		margin:0 6px;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu
+	{
+		margin-top:4px;
+	}
+	
+	div#yo-user-tools #yo-user-info
+	{
+		height:32px;
+		padding:4px;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-photo
+	{
+		width:28px;
+		height:28px;
+		padding:2px;
+		float:left;
+		/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAgCAAAAAD2jk3GAAAAF0lEQVR42mN4ycTA9J+JAUoiMH4WXA8AH5URGGN/6FcAAAAASUVORK5CYII=) repeat-x;*/
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAgCAAAAAD2jk3GAAAAF0lEQVR42mN4ycTA9J+JAUoiMH4WXA8AH5URGGN/6FcAAAAASUVORK5CYII=)repeat-x;
+		position:relative;
+		
+		/* CSS 3 */
+		
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+		-o-border-radius:2px;
+		-khtml-border-radius:2px;
+		border-radius:2px;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-photo img
+	{
+		max-width:100%;
+		max-height:100%;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-functions
+	{
+		margin:0 4px 0 40px;
+		font-size:11px;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-functions ul, 
+	div#yo-user-tools #yo-user-info #yo-user-functions ul li
+	{
+		margin:0;
+		list-style:none;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-functions ul li
+	{
+		display:inline;
+		margin-right:4px;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-functions ul li a
+	{
+		text-decoration:none;
+		color:#ffffff;
+	}
+	
+	div#yo-user-tools #yo-user-info #yo-user-functions ul li a:hover
+	{
+		text-decoration:underline;
+	}
+	
+	/* (1.3) User Toolbar Dropdown Menu
+	================================================== */
+	
+	div#yo-user-tools .yo-dropdown-menu span.yo-dropdown-notif
+	{
+		position:absolute;
+		display:block;
+		min-width:12px;
+		height:16px;
+		padding:0 2px;
+		font-size:11px;
+		text-align:center;
+		color:#ffffff;
+		background-color:#c00;
+		top:-4px;
+		left:75%;
+		z-index:2;
+		
+		/* CSS 3 */
+		
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+		-o-border-radius:2px;
+		-khtml-border-radius:2px;
+		border-radius:2px;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu a.yo-i-24, 
+	div#yo-user-tools .yo-dropdown-menu a.yo-ic
+	{
+		background-position:center center;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu a.yo-dropdown-trigger
+	{
+		text-indent:-9999px;
+		display:block;
+		padding:0;
+		outline:none;
+		overflow:hidden;
+		width:32px;
+		height:32px;
+		border:1px solid #565656;
+		
+		/* CSS 3 */
+		
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		-o-border-radius:4px;
+		-khtml-border-radius:4px;
+		border-radius:4px;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box
+	{
+		display:none;
+		position:absolute;
+		right:0;
+		width:200px;
+		top:100%;
+		margin-top:-1px;
+		z-index:-1;
+		padding:10px;
+		
+		background:#323232;
+		border:1px solid #565656;
+		
+		/* CSS 3 */
+		
+		-webkit-border-radius:6px 0 6px 6px;
+		-moz-border-radius:6px 0 6px 6px;
+		-o-border-radius:6px 0 6px 6px;
+		-khtml-border-radius:6px 0 6px 6px;
+		border-radius:6px 0 6px 6px;	
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content
+	{
+		background:#ffffff;
+	}
+	
+	div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box ul, 
+	div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box ul li
+	{
+		margin:0;
+		list-style:none;
+		font-size:12px;
+	}
+	
+		/* (1.3.1) User Toolbar Dropdown Styles
+		================================================== */
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li a
+		{
+			padding-left:32px;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content .yo-dropdown-viewall a, 
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul li a
+		{
+			padding:4px 8px;
+			text-decoration:none;
+			color:#323232;
+			display:block;
+			border-bottom:1px solid #d0d0d0;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content .yo-dropdown-viewall a
+		{
+			border:0;
+			font-size:11px;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content .yo-dropdown-viewall a:hover
+		{
+			background-color:#d5d5d5;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li:hover a, 
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-notifications li:hover a
+		{
+			background-color:#d5d5d5 !important;
+			border-bottom-color:#bbbbbb;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li.read a
+		{
+			background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHElEQVR42pWQTW8SURSG76orf4U7l+79E8AK3NA2VbrwI8SmC6xKAp0GQWsTtBqMMQjWGBZGA4GJUj+ASiuJnQwjw/AdIAwBZkqGhG6Oc66hiaYi3uTJvTn3fU7OvYT8Zb14tHopFrQD8jqwcpHMupxO55nQ9mqsyF4+6mcWuF56gRcTtlHk6cqOfjf3L/mCHpSbH5eaR1/nv+kcIOrefK6xuyRHg/bmuuv2udPEObfrzvr7l9eVbmqxMBH/RP6yKKUjV7X7nrUbJ7LL5Trv27j1nYtdq6v7y/zwwHY4DSW7LIjslf7jBzd3GYY5Szwej7affAaawOi4Z4SBw89PwOv1DkkgEBjncjn4EH0OquAD7cfGVIZ65lMiCJlMBtAlfr8fNE2DarUK0bcR6HJboIl3YSR6fwNrPX4L3r15BZIkUQdd4vP5QFVVaDQa0O12IZVKgbj3ELTiPRhJv8CzlN2GZDIJsizTLDroErfbDf1+n3ZFBoMBlEolCIVCJ4TDYSgUCvRukkMHXeJwOGhXnufpRa/Xg3Q6DaIo0hqCDbPZLJ0QM1hDB11it9uh3W6DIAg0EI/HAT91IiPYjOM4YFkWOp0OzaKDLrHZbLSIoJzP56Fer58KPiORSECr1aJ5dInVaqUfgnKxWKSjTaNSqdAm+AfoEovFcozjlctlUBRlJmq1Gn2S2WweE4PBsGkymY71ffw/GI1G3Dd/AnjVvtgMui06AAAAAElFTkSuQmCC) no-repeat 8px center;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li.unread a
+		{
+			background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABi0lEQVR42sWTy6tBURjF97+ICRMzU1OZMDU0OggDyb/g2SkKA4WiPDod5P0q8jZa1/qK7q3bzR05tdp7n/391vc4HaU+/iQSCS0SieCxvq1UKoVoNMq9psLhMEqlEvb7Pa7XK87n859izOFwQLVaBROrUCiEzWYDGl0uF7nc7Xa/infH4xGxWEzOZFUwGJTstVpNXjDLer3GbDb7odVqJTCzttttYciqQCCA7XaLXq+HQqHwMhmNRuj3+6LhcPiCWTpjyZBVfr8f8/kc9XpdlMlkJPB0OqHb7aLT6UjpHBpn9YwjQ1Z5PB6Mx2OUy2U0Gg0sl0uZB4H7/Y7b7YZ4PI5kMonFYiExjCVDVrndbpimKaXRNZfLodlsQtd1eL1e+Hw+uWPf+Xwe0+kUlUpFGLLK5XJJj5PJRMpnyXQ3DAPZbBbFYhGDwUDecR5MwPmQIaucTqcMJJ1OC8Qv8BRNv58pgjThnqxyOBxotVriymG9I7bBlux2O5TFYtFsNhse679ktVq5ap//Gb8ADkBrzOUnAcEAAAAASUVORK5CYII=) no-repeat 8px center #f0f0f0;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-notifications li.unread a
+		{
+			background:#f0f0f0;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li .message, 
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-notifications li .message
+		{
+			overflow:hidden;
+			display:block;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li .sender
+		{
+			font-weight:bold;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li .sender, 
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-messages li .time, 
+		div#yo-user-tools .yo-dropdown-menu .yo-dropdown-box .yo-dropdown-content ul.yo-notifications li .time
+		{
+			font-size:0.9em;
+			display:block;
+		}
+		
+		/* (1.3.2) User Toolbar Toggled Dropdown Styles
+		================================================== */
+		
+		div#yo-user-tools .yo-dropdown-menu.toggled
+		{
+			z-index:2;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu.toggled .yo-dropdown-box
+		{
+			display:block;
+		}
+		
+		div#yo-user-tools .yo-dropdown-menu.toggled a.yo-dropdown-trigger
+		{
+			border-bottom:0;
+			
+			/* CSS 3 */
+				
+			-webkit-border-radius:4px 4px 0 0;
+			-moz-border-radius:4px 4px 0 0;
+			-o-border-radius:4px 4px 0 0;
+			-khtml-border-radius:4px 4px 0 0;
+			border-radius:4px 4px 0 0;
+		}
+
+/* (2) Main Wrapper
+================================================== */
+
+div#yo-wrapper
+{
+	height:auto;
+	min-height:100%;
+	position:relative;
+	z-index:0;
+	
+	
+}
+
+/* (3) Sidebar
+================================================== */
+
+div#yo-sidebar
+{
+	width:198px;
+	margin-right:2px;
+	padding-top:0px;
+	float:left;
+	z-index:1;
+	position:relative;
+}
+
+div#yo-sidebar-stitch, 
+div#yo-sidebar-bg
+{
+	position:absolute;
+	top:0; bottom:0;
+}
+
+div#yo-sidebar-stitch
+{
+	left:189px;
+	width:17px;
+	z-index:2;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAICAYAAAAftBSpAAAAOElEQVR42mNgYGBgAWJuIBYDYhUgNgVibyCOAeJsIC5iwARV////348sMGoIJoAZIorFkKyhZQgAehEg49y8X00AAAAASUVORK5CYII=) repeat-y;*/
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAICAYAAAAftBSpAAAAOElEQVR42mNgYGBgAWJuIBYDYhUgNgVibyCOAeJsIC5iwARV////348sMGoIJoAZIorFkKyhZQgAehEg49y8X00AAAAASUVORK5CYII=) repeat-y;
+}
+
+div#yo-sidebar-stitchreport
+{
+	left:189px;
+	width:17px;
+	z-index:2;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAYAAADaxo44AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAbSURBVBhXY2BAgKp///7tR+LDmVSUwGY8NcQAvX0QzSPlETgAAAAASUVORK5CYII=) repeat-y;
+}
+
+
+div#yo-sidebar-bg
+{
+	left:0;
+	z-index:0;
+	width:198px;
+/*	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWBAMAAADOL2zRAAAAMFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaPxwLAAAAEHRSTlMAAQIDBAUGBwgJCgsMDQ4PPFyWBgAAAqJJREFUeNrt1l1Lk2EcB+Df5l50092mlKHIJmoE6XyiOkiNrc6KajaCgkhnQQTmGyZC6mZUh+lOw0o9Np0RUpmytcKjbKsgQlKXW0nItueZjTW2+fQh7rP4H17f4AL2Fm6/VRZtwxwWVY/mtBzG4f6acrEu2Djuc22eiYdKOAzNrjXUdUswOiWj07A1aeYwsoi+jooGy7PUld4nsHg5jBtxteLXcnSuz1KoklAtcBjmSk3mb9iV9tnuN5fk+V0cRtqjnIWHzSZljwtlhhMcRnO1XXnKvj/oZ8FQ3gvTBodRAHVKndhZaVEFB9dSYwoOA7vn29THYgHTGCAe8Io8/iJDKcdfJll8QhQmnHYOY3jAUbyQC/gfhC3d2UwuwmHUTIZDrFKuCUlNOQlsiMMI6oweh2NBBPsmOw6lOziM0t8/+txCtW9GKx+FUO/hMMT1dw1TApt/LoV/CiNLJg6jRZmTmVhcFLO9T7BXo00cBvA0axDa87+jt4lNL+o5DIWouerWddkOCpu69YZ7kxxGhdf99bYpc9p/86MqdERVzmE4lIGCQl9SF9+oYtHjGOAwTpZhRJLMqBvs7IAMN4fRIOZfDEZ0tktbl+dddtbDYdzpUbusubM7RaJiS2WqDXAYdd1zqtTjQSsiM9eUoXMTHIZ1HKMxBoPC94EZte2tHAaqHMnlUk1MMkj6tbY30xxGcXAYtY1W00OD1K9fZzKH8fluz5BSDKMSbEq7PfqHw1jdQKIM5q4LrfVeTfviPg4joo9n9nyS1+BMRFeXFNc5jFlTqLN1RpuFvMLS/mQFh0H/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/9B//6BwxydAmMZ6OeAAAAAElFTkSuQmCC);*/
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWBAMAAADOL2zRAAAAMFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaPxwLAAAAEHRSTlMAAQIDBAUGBwgJCgsMDQ4PPFyWBgAAAqJJREFUeNrt1l1Lk2EcB+Df5l50092mlKHIJmoE6XyiOkiNrc6KajaCgkhnQQTmGyZC6mZUh+lOw0o9Np0RUpmytcKjbKsgQlKXW0nItueZjTW2+fQh7rP4H17f4AL2Fm6/VRZtwxwWVY/mtBzG4f6acrEu2Djuc22eiYdKOAzNrjXUdUswOiWj07A1aeYwsoi+jooGy7PUld4nsHg5jBtxteLXcnSuz1KoklAtcBjmSk3mb9iV9tnuN5fk+V0cRtqjnIWHzSZljwtlhhMcRnO1XXnKvj/oZ8FQ3gvTBodRAHVKndhZaVEFB9dSYwoOA7vn29THYgHTGCAe8Io8/iJDKcdfJll8QhQmnHYOY3jAUbyQC/gfhC3d2UwuwmHUTIZDrFKuCUlNOQlsiMMI6oweh2NBBPsmOw6lOziM0t8/+txCtW9GKx+FUO/hMMT1dw1TApt/LoV/CiNLJg6jRZmTmVhcFLO9T7BXo00cBvA0axDa87+jt4lNL+o5DIWouerWddkOCpu69YZ7kxxGhdf99bYpc9p/86MqdERVzmE4lIGCQl9SF9+oYtHjGOAwTpZhRJLMqBvs7IAMN4fRIOZfDEZ0tktbl+dddtbDYdzpUbusubM7RaJiS2WqDXAYdd1zqtTjQSsiM9eUoXMTHIZ1HKMxBoPC94EZte2tHAaqHMnlUk1MMkj6tbY30xxGcXAYtY1W00OD1K9fZzKH8fluz5BSDKMSbEq7PfqHw1jdQKIM5q4LrfVeTfviPg4joo9n9nyS1+BMRFeXFNc5jFlTqLN1RpuFvMLS/mQFh0H/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/Rv+hf9C/6F/2L/kX/on/9B//6BwxydAmMZ6OeAAAAAElFTkSuQmCC);
+
+}
+
+
+/* (4) Search Box
+================================================== */
+
+div#yo-searchbox
+{
+	margin:0 14px 10px 10px;
+	padding:3px;
+}
+
+div#yo-searchbox .yo-search-input
+{
+	background:none;
+	padding:3px;
+	width:135px;
+	float:left;
+	border:none;
+	outline:none;
+	color:#ffffff;
+}
+
+div#yo-searchbox .yo-search-submit
+{
+	text-indent:-9999px;
+	text-transform:capitalize;
+	width:24px; height:24px;
+	display:block;
+	margin-left:144px;
+	border:none;
+	cursor:pointer;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAAh1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9qkf8RAAAALHRSTlMA5BLMIS0DJGBmFQZUb6UwOa7tkwwJbF11/Ir2xquHn1Hzyc9Ie/nhJxsPeHWyiTkAAABmSURBVAhbVcdHEoIAEACwoIiKYO+91/3/+zzIjJpbIC3OucpkFBGHdrXNap72ulGCfrRhMMygjDEU0YBp5DD77L5YorNOMrCN3b51jFMNZJdrxC2J+qc0Hpo/RTOJ+vOvre+kr84btVMHGG44L+cAAAAASUVORK5CYII=) no-repeat center center;*/
+	 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAAh1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9qkf8RAAAALHRSTlMA5BLMIS0DJGBmFQZUb6UwOa7tkwwJbF11/Ir2xquHn1Hzyc9Ie/nhJxsPeHWyiTkAAABmSURBVAhbVcdHEoIAEACwoIiKYO+91/3/+zzIjJpbIC3OucpkFBGHdrXNap72ulGCfrRhMMygjDEU0YBp5DD77L5YorNOMrCN3b51jFMNZJdrxC2J+qc0Hpo/RTOJ+vOvre+kr84btVMHGG44L+cAAAAASUVORK5CYII=)no-repeat center center;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-khtml-border-radius:4px;
+	border-radius:4px;
+}
+
+/* (5) Navigation
+================================================== */
+
+div#yo-navigation ul, 
+div#yo-navigation ul li
+{
+	margin:0;
+	list-style:none;
+}
+
+div#yo-navigation ul
+{
+	padding-top:1px;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACAQMAAACjTyRkAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlOAJp8d0I4AAAAMSURBVHjaY2BgaAAAAIQAgfeIPT4AAAAASUVORK5CYII=) repeat-x left top;*/
+	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACAQMAAACjTyRkAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlOAJp8d0I4AAAAMSURBVHjaY2BgaAAAAIQAgfeIPT4AAAAASUVORK5CYII=) repeat-x left top;
+
+}
+
+div#yo-navigation ul li
+{
+	position:relative;
+	padding-bottom:2px;
+/*	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACAQMAAACjTyRkAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlOAJp8d0I4AAAAMSURBVHjaY2BgaAAAAIQAgfeIPT4AAAAASUVORK5CYII=) repeat-x left bottom;*/
+	  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACAQMAAACjTyRkAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlOAJp8d0I4AAAAMSURBVHjaY2BgaAAAAIQAgfeIPT4AAAAASUVORK5CYII=) repeat-x left bottom;
+}
+
+div#yo-navigation ul li a, 
+div#yo-navigation ul li span
+{
+	color:#ffffff;
+	outline:none;
+	display:block;
+	text-decoration:none;
+	margin-left:10px;
+	margin-right:16px;
+	position:relative;
+	padding:11px 48px 11px 40px;
+	line-height:20px;
+}
+
+div#yo-navigation ul li a.yo-ic, 
+div#yo-navigation ul li span.yo-ic
+{
+	padding-left:40px;
+	background-position:4px center;
+}
+
+div#yo-navigation ul li a.yo-i-24, 
+div#yo-navigation ul li span.yo-i-24
+{
+	padding-left:40px;
+	background-position:8px center;
+}
+
+div#yo-navigation ul li span.yo-nav-tooltip
+{
+	position:absolute;
+	line-height:1;
+	padding:5px;
+	right:-16px;
+	top:50%;
+	margin-top:-12px;
+}
+
+div#yo-navigation ul li ul
+{
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMmkutdmwAAAApJREFUeNpjYAAAAAIAAeUn3vwAAAAASUVORK5CYII=);*/
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMmkutdmwAAAApJREFUeNpjYAAAAAIAAeUn3vwAAAAASUVORK5CYII=);
+	border:0;
+	
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+	-khtml-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+div#yo-navigation ul li ul.closed
+{
+	display:none;
+}
+
+div#yo-navigation ul li ul li
+{
+	border:0;
+	padding:0;
+	margin:0;
+	background-image:none;
+}
+
+div#yo-navigation ul li ul li a, 
+div#yo-navigation ul li ul li span
+{
+	display:block;
+	font-size:12px;
+	padding:4px 0 4px 40px;
+	color:#ffffff !important;
+	text-shadow:none;
+}
+
+div#yo-navigation ul li ul li:hover
+{
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMavYQhHAAAAApJREFUeNpjYAAAAAIAAeUn3vwAAAAASUVORK5CYII=);
+}
+
+/* (6) Main Container
+================================================== */
+
+div#yo-container
+{
+	margin-left:160px;
+	margin-right:43px;
+	padding-top:10px;
+	background-color:#f0f0f0;
+}
+
+div#yo-container .container
+{
+	float:left;
+	margin:0 2%;
+	padding-bottom:52px;
+}
+
+div#yo-containertab
+{
+	margin-left:160px;
+	padding-top:1px;
+	background-color:#f0f0f0;
+}
+
+div#yo-containertab .containertab
+{
+	float:left;
+	margin: 0 4%;
+	padding-bottom:52px;
+}
+
+
+
+/* Style sheet for whole page dashboard */
+div#yo-maincontainer
+{
+	margin-left:200px;
+	padding-top:10px;
+	background-color:#f0f0f0;
+}
+
+div#yo-maincontainer .container
+{
+	float:left;
+	margin:0 1%;
+	padding-bottom:52px;
+}
+
+div#yo-maincontainertab
+{
+	margin-left:160px;
+	padding-top:1px;
+	background-color:#f0f0f0;
+}
+
+div#yo-maincontainertab .containertab
+{
+	float:right;
+	margin: 0 4%;
+	padding-bottom:52px;
+}
+
+/* Style sheet for whole page dashboard only */
+div#yo-dashmaincontainer
+{
+	margin-left:2px;
+	padding-top:10px;
+	background-color:#f0f0f0;
+}
+
+div#yo-dashmaincontainer .container
+{
+	float:left;
+	margin:0 2%;
+	padding-bottom:52px;
+}
+
+div#yo-dashmaincontainertab
+{
+	margin-left:160px;
+	padding-top:1px;
+	background-color:#f0f0f0;
+}
+
+div#yo-dashmaincontainertab .containertab
+{
+	float:left;
+	margin: 0 4%;
+	padding-bottom:52px;
+}
+
+
+/* (7) Footer
+================================================== */
+
+div#yo-footer
+{
+	margin:0 2%;
+	text-align:center;
+	padding:16px 0;
+	bottom:0;
+	left:206px; right:0;
+	border-top:1px solid #dadada;
+	position:absolute;
+}
+
+
+/* My Added Style Sheet */
+
+#main-title {
+		color: #A7A7C0;
+		padding: 0px;
+		position: relative;
+		}
+		#main-title + .with-padding {
+			padding-top: 0 !important;
+		}
+		#main-title h1,
+		#main-title h2 {
+			margin: 0;
+			padding: 0;
+			}
+			#main-title h2 {
+				position: absolute;
+				top: 3px;
+				right: 20px;
+				font-size: 4px;
+				}
+				#main-title h2 strong {
+					font-size: 30px;
+					vertical-align: -3px;
+				}
+				
+
+.LeftMenuHeader
+{
+    background-position:center center;   
+    background-position:8px center;
+    color:#ffffff;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.LeftMenuText
+{
+    background-position:center center;    
+    background-position:8px center;
+    color:#ffffff;     
+    font-size:12px;  
+}
+a.leftmenulink, a.leftmenulink:visited, a.leftmenulink:active{  		
+	color: #ffffff;	
+	text-decoration:none;
+}
+a.leftmenulink:hover{
+  	text-decoration:underline;  	
+  	color: #ffffff;
+}
+
+
+
+
+
+/* yogesh Changes for Right container at 26-06-2012 but not used */
+
+div#yo-rightcontainer
+{
+	margin-right:15%;
+	padding-top:10px;
+	background-color:#f0f0f0;
+}
+
+div#yo-rightcontainer .container
+{
+	float:left;
+	margin:0 2%;
+	padding-bottom:52px;
+}
+
+div#yo-rightcontainertab
+{
+	margin-right:15%;
+	padding-top:1px;
+	background-color:#f0f0f0;
+}
+
+div#yo-rightcontainertab .containertab
+{
+	float:left;
+	margin: 0 4%;
+	padding-bottom:52px;
+}
+.treediv
+{
+    white-space:nowrap;
+	overflow:auto;
+	height:100%;
+    }
+
+
+.treeReportdiv
+{
+     margin-left:5px;
+    margin-right:5px;
+    background:#ffffff;
+    overflow:auto;
+     height:500px;
+    white-space: nowrap;
+    }
+
+/* End Code*/

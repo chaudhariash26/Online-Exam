@@ -1,0 +1,306 @@
+/*
+ * MWS Admin v1.5 - Misc. Elements Stylesheet
+ * This file is part of MWS Admin, an Admin template build for sale at ThemeForest.
+ * All copyright to this file is hold by Mairel Theafila <maimairel@yahoo.com> a.k.a nagaemas on ThemeForest.
+ * Last Updated:
+ * April 29, 2012
+ *
+ * Table of Contents
+ * ==================================================
+ *
+ * 1. Pagination
+ * 2. Wizard Navigation
+ * 3. Summary List
+ * 4. Panel Toolbar
+ *
+ */
+
+/* (1) Pagination
+================================================== */
+
+.yo-pagination
+{
+	text-align:center;
+	margin:auto;
+}
+
+.yo-pagination.left
+{
+	text-align:left;
+}
+
+.yo-pagination.right
+{
+	text-align:right;
+}
+
+.yo-pagination ul li
+{
+	margin:0;
+	display:inline;
+	list-style:none;
+}
+
+.yo-pagination ul li .yo-paging-button
+{
+	text-align:center;
+	padding:3px 9px;
+	margin:4px 1px;
+	border:1px solid #cccccc;
+	text-decoration:none;
+	color:#545454;
+	background:#f0f0f0;
+	
+	/* CSS 3 */
+	
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	border-radius:4px;
+}
+
+.yo-pagination ul li .yo-paging-button.current
+{
+	border-color:#323232;
+	color:#ffffff;
+	background-color:#323232;
+}
+
+.yo-pagination ul li .yo-paging-button.disabled
+{
+	color:#d0d0d0;
+	cursor:default;
+}
+
+/* (2) Wizard Navigation
+================================================== */
+
+.yo-wizard-nav ul
+{
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.yo-wizard-nav
+{
+	background:#eaeaea url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAwCAAAAAAJTWSXAAAAqElEQVQYGQXBgQHAIAzDMCf0/4cH9aQ8AGAQACoA0EAAKhhCAUQKIYSCiBQIQCECVIjRQUBoQIRuREhRiNsQsmGWSDYFCbGJYZdisFhBjF1ZtA1EcBCE1GgioxFig4LMGkQKQbDLwsMiitRuerITemFs9nW4Z/Rcjtb1LL4x7rkwwrmjA4/qGw+sSfcGinX53J5p34HX+p55vMFziXa9k3Jq+Kh3bGXrD1pjjShMAJQmAAAAAElFTkSuQmCC) repeat-x left top;
+	border-bottom:1px solid #dddddd;
+}
+
+.yo-wizard-nav ul li
+{
+	float:left;
+	list-style:none;
+	margin:0; padding:0;
+	padding:0 25px;
+	margin-right:-25px;
+	margin-bottom:-1px;
+	border-right:1px solid #d6d6d6;
+	background:url(images/core/yo-wizard-nav.png) no-repeat left -50px;
+	
+	display:block;
+	max-width:250px;
+	max-height:50px;
+	overflow:hidden;
+}
+
+.yo-wizard-nav ul li.current a, 
+.yo-wizard-nav ul li.current span
+{
+	color:#666666;
+}
+
+.yo-wizard-nav ul li.disabled a, 
+.yo-wizard-nav ul li.disabled span
+{
+	color:#dddddd;
+}
+
+.yo-wizard-nav ul li a.yo-i-24, 
+.yo-wizard-nav ul li a.yo-ic-16, 
+.yo-wizard-nav ul li span.yo-i-24, 
+.yo-wizard-nav ul li span.yo-ic-16
+{
+	background-position:12px center;
+	padding-left:40px;
+}
+
+.yo-wizard-nav ul li:first-child
+{
+	background-position:-25px -50px;
+	padding-left:12px;
+}
+
+.yo-wizard-nav ul li:last-child
+{
+	padding-right:12px;
+}
+
+.yo-wizard-nav ul li:first-child.current, 
+.yo-wizard-nav ul li:first-child:hover.current
+{
+	background-position:-25px top;
+}
+
+.yo-wizard-nav ul li:first-child:hover
+{
+	background-position:-25px -100px;
+}
+
+.yo-wizard-nav ul li.current, 
+.yo-wizard-nav ul li.current:hover
+{
+	background-position:left top;
+}
+
+.yo-wizard-nav ul li:hover
+{
+	background-position:left -100px;
+}
+
+.yo-wizard-nav ul li a, 
+.yo-wizard-nav ul li span
+{
+	display:block;
+	line-height:50px;
+	text-decoration:none;
+	padding:0 16px;
+	color:#999999;
+}
+
+/* (3) Summary List
+================================================== */
+
+ul.yo-summary
+{
+	margin:0; 
+	padding:0;
+}
+
+ul.yo-summary li
+{
+	padding:0; margin:0;
+	list-style-type:none;
+	font-size:14px;
+	color:#666666;
+	padding:2px 4px;
+	border-bottom:1px solid #bbbbbb;
+	border-top:1px solid #ffffff;
+	
+	overflow:hidden;
+	display:block;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+ul.yo-summary li:first-child
+{
+	border-top:0;
+}
+
+ul.yo-summary li:last-child
+{
+	border-bottom:0;
+}
+
+ul.yo-summary li span
+{
+	font-size:26px;
+	text-align:right;
+	margin-right:3px;
+	width:80px;
+	color:#444444;
+	display:inline-block;
+}
+
+/* (4) Panel Toolbar
+================================================== */
+
+div.yo-panel-toolbar
+{
+	border-bottom:1px solid #dddddd;
+	background:#eaeaea url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAjCAYAAABVcWC0AAAASElEQVR42kWNwQ3DQADCHCbq/rudnU+SfpBAYEh/s65VDWAZq5j4Wn2yU0xlKLNY+cgx5n/xoU4vIH0rX/bYw5LvPGYy6hrRDazNYOswG+csAAAAAElFTkSuQmCC) repeat-x left top;
+}
+
+div.yo-panel-toolbar.bottom
+{
+	border-top:1px solid #dddddd;
+}
+
+div.yo-panel-toolbar ul, 
+div.yo-panel-toolbar ul li
+{
+	list-style:none;
+	padding:0; margin:0;
+}
+
+div.yo-panel-toolbar.right ul
+{
+	float:right;
+}
+
+div.yo-panel-toolbar ul
+{
+	float:left;
+}
+
+div.yo-panel-toolbar.right ul li
+{
+	border-right:0;
+	border-left:1px solid #d0d0d0;
+}
+
+div.yo-panel-toolbar ul li
+{
+	display:block;
+	float:left;
+	border-right:1px solid #d0d0d0;
+}
+
+div.yo-panel-toolbar ul li a, 
+div.yo-panel-toolbar ul li span
+{
+	text-decoration:none;
+	color:#666666;
+	padding:8px 12px;
+	display:block;
+	cursor:pointer;
+	
+	/* CSS 3 */
+	
+	-webkit-box-shadow:inset 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 0px #ffffff;
+	-moz-box-shadow:inset 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 0px #ffffff;
+	-o-box-shadow:inset 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 0px #ffffff;
+	-khtml-box-shadow:inset 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 0px #ffffff;
+	box-shadow:inset 1px 0px 0px rgba(255, 255, 255, 0.75), inset 0px 1px 0px #ffffff;
+}
+
+div.yo-panel-toolbar ul li a.yo-ic-16, 
+div.yo-panel-toolbar ul li span.yo-ic-16
+{
+	padding-left:32px;
+	background-position:12px center;
+}
+
+div.yo-panel-toolbar ul li a:active, 
+div.yo-panel-toolbar ul li span:active
+{
+	background-color:#efefef;
+	
+	/* CSS 3 */
+	
+	-webkit-box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+	-moz-box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+	-o-box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+	-khtml-box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+	box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* My Style sheets*/
+.toolbar-form-panel
+{
+	border-bottom:1px solid #dddddd;
+	background:#eaeaea url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAjCAYAAABVcWC0AAAASElEQVR42kWNwQ3DQADCHCbq/rudnU+SfpBAYEh/s65VDWAZq5j4Wn2yU0xlKLNY+cgx5n/xoU4vIH0rX/bYw5LvPGYy6hrRDazNYOswG+csAAAAAElFTkSuQmCC) repeat-x left top;
+}
